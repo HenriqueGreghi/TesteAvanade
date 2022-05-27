@@ -22,44 +22,46 @@ namespace TesteAvanade
 
                 int opcao = int.Parse(Console.ReadLine());
 
-                while (comprar == true)
 
-                    switch (opcao)
-                    { 
 
-                        case 1:
-                            Console.WriteLine("tv 50'"); 
-                            break;
-                            
-                        case 2:
-                            Console.WriteLine("Ipad");
-                            break;
-                        case 3:
-                            Console.WriteLine("Videogame");
-                            break;
-                        case 4:
-                            Console.WriteLine("Celular");
-                            break;
-                        case 5:
-                            Console.WriteLine("Tablet");
-                            break;
-                        case 6:
-                            Console.WriteLine("Notebook");
-                            break;
-                        case 7:
-                            Console.WriteLine("Fone de ouvido");
-                            break;
-                        case 8:
-                            comprar = false;
-                            break;
-                        default:
-                            Console.WriteLine("Opção inválida");
-                            comprar = false;
-                            break;
-                    }
-            }while (comprar);
+                switch (opcao)
+                {
 
-            
+                    case 1:
+                        Console.WriteLine("tv 50'");
+                        break;
+
+                    case 2:
+                        Console.WriteLine("Ipad");
+                        break;
+                    case 3:
+                        Console.WriteLine("Videogame");
+                        break;
+                    case 4:
+                        Console.WriteLine("Celular");
+                        break;
+                    case 5:
+                        Console.WriteLine("Tablet");
+                        break;
+                    case 6:
+                        Console.WriteLine("Notebook");
+                        break;
+                    case 7:
+                        Console.WriteLine("Fone de ouvido");
+                        break;
+                    case 8:
+                        Console.WriteLine("Abrindo pagina de pagamento");
+                        comprar = false;
+                        break;
+                    default:
+                        Console.WriteLine("Opção inválida");
+                        comprar = false;
+                        break;
+                }
+            } while (comprar == true);
+
+
+
 
         }
     }
